@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.305,D:\project\Delphi\tmp\Archimedes\Unit1.pas=D:\project\Delphi\tmp\Archimedes\Frame\uFramBase.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.214,=D:\project\Delphi\tmp\Archimedes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.138,=D:\project\Delphi\tmp\Archimedes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.491,D:\project\Delphi\tmp\Archimedes\Unit1.pas=D:\project\Delphi\tmp\Archimedes\Classes\Classes.db.Archimedes.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.859,D:\project\Delphi\tmp\Archimedes\Unit1.pas=D:\project\Delphi\tmp\Archimedes\Classes\Classes.types.Archimedes.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.526,D:\project\Delphi\tmp\Archimedes\Classes\Classes.db=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.361,C:\Users\6ruse\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\project\Delphi\tmp\Archimedes\uMain.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.589,D:\project\Delphi\tmp\Archimedes\Unit1.pas=D:\project\Delphi\tmp\Archimedes\Frame\uFramMedCard.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.662,D:\project\Delphi\tmp\Archimedes\Unit1.pas=D:\project\Delphi\tmp\Archimedes\Classes\Classes.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.627,D:\project\Delphi\tmp\Archimedes\Unit1.pas=D:\project\Delphi\tmp\Archimedes\Frame\uframMedCardEdit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.035,=C:\Users\6ruse\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.140,C:\Users\6ruse\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\project\Delphi\tmp\Archimedes\Archimedes.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.627,D:\project\Delphi\tmp\Archimedes\Unit1.dfm=D:\project\Delphi\tmp\Archimedes\Frame\uframMedCardEdit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.305,D:\project\Delphi\tmp\Archimedes\Unit1.dfm=D:\project\Delphi\tmp\Archimedes\Frame\uFramBase.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.589,D:\project\Delphi\tmp\Archimedes\Unit1.dfm=D:\project\Delphi\tmp\Archimedes\Frame\uFramMedCard.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.980,=D:\project\Delphi\tmp\Archimedes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.534,=D:\project\Delphi\tmp\Archimedes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.469,=D:\project\Delphi\tmp\Archimedes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.121,=D:\project\Delphi\tmp\Archimedes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.361,C:\Users\6ruse\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\project\Delphi\tmp\Archimedes\uMain.pas</Transaction>
+  </Transactions>
+</BorlandProject>
