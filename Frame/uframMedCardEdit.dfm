@@ -68,21 +68,13 @@ inherited framMedCardEdit: TframMedCardEdit
     TabOrder = 2
     Text = 'edtFio'
   end
-  object edtPhone: TEdit
-    Left = 315
-    Top = 36
-    Width = 150
-    Height = 23
-    TabOrder = 3
-    Text = 'edtFio'
-  end
   object cmbGender: TComboBox
     Left = 74
     Top = 67
     Width = 143
     Height = 23
     Style = csDropDownList
-    TabOrder = 4
+    TabOrder = 3
     Items.Strings = (
       #1046
       #1052)
@@ -93,7 +85,7 @@ inherited framMedCardEdit: TframMedCardEdit
     Width = 478
     Height = 41
     Align = alBottom
-    TabOrder = 5
+    TabOrder = 4
     object btnCancel: TButton
       Left = 390
       Top = 9
@@ -112,5 +104,15 @@ inherited framMedCardEdit: TframMedCardEdit
       TabOrder = 1
       OnClick = BtnSaveClick
     end
+  end
+  object edtPhone: TMaskEdit
+    Left = 315
+    Top = 36
+    Width = 148
+    Height = 23
+    EditMask = '!\(999\)000-0000;1;_'
+    MaxLength = 13
+    TabOrder = 5
+    Text = '(   )   -    '
   end
 end

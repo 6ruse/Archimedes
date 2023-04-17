@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   uFramBase, Vcl.StdCtrls, Classes.types.Archimedes, Vcl.ComCtrls,
-  Vcl.WinXPickers, Vcl.ExtCtrls, Classes.db.Archimedes;
+  Vcl.WinXPickers, Vcl.ExtCtrls, Classes.db.Archimedes, Vcl.Mask;
 
 type
   TframMedCardEdit = class(TframBase)
@@ -18,11 +18,11 @@ type
     Label5: TLabel;
     dpDateBirth: TDatePicker;
     edtPlaceWork: TEdit;
-    edtPhone: TEdit;
     cmbGender: TComboBox;
     Panel1: TPanel;
     btnCancel: TButton;
     BtnSave: TButton;
+    edtPhone: TMaskEdit;
     procedure btnCancelClick(Sender: TObject);
     procedure BtnSaveClick(Sender: TObject);
   private
@@ -32,6 +32,7 @@ type
     class var FInstance: TframMedCardEdit;
 
     procedure clearField();
+    function fieldValidation(): Boolean;
   protected
     procedure Init; override;
   public
@@ -80,13 +81,16 @@ end;
 procedure TframMedCardEdit.BtnSaveClick(Sender: TObject);
 begin
   inherited;
-  fMedCardDb.Fio:= edtFio.Text;
-  fMedCardDb.PlaceWork:= edtPlaceWork.Text;
-  fMedCardDb.Telephone:= edtPhone.Text;
-  fMedCardDb.Gender:= cmbGender.Items[cmbGender.ItemIndex];
-  fMedCardDb.DateBirth:= DateToStr(dpDateBirth.Date);
+  if fieldValidation() then begin
+    fMedCardDb.Fio:= edtFio.Text;
+    fMedCardDb.PlaceWork:= edtPlaceWork.Text;
+    fMedCardDb.Telephone:= edtPhone.Text;
+    fMedCardDb.Gender:= cmbGender.Items[cmbGender.ItemIndex];
+    fMedCardDb.DateBirth:= DateToStr(dpDateBirth.Date);
 
-  fFacade.SaveMedCard(fMedCardDb);
+    fFacade.SaveMedCard(fMedCardDb);
+
+  end;
 end;
 
 procedure TframMedCardEdit.clearField;
@@ -96,6 +100,22 @@ begin
   edtPhone.Text:= EmptyStr;
   cmbGender.ItemIndex:= -1;
   dpDateBirth.Date:= Now();
+end;
+
+function TframMedCardEdit.fieldValidation: Boolean;
+begin
+  result:= True;
+  if edtFio.Text = EmptyStr then begin
+    Application.MessageBox('Нужно ввести ФИО пациента', 'Ошибка', MB_OK or MB_ICONERROR);
+    edtFio.SetFocus;
+    result:= false;
+  end;
+
+  if cmbGender.ItemIndex = -1 then begin
+    Application.MessageBox('Нужно выбрать пол пациента', 'Ошибка', MB_OK or MB_ICONERROR);
+    cmbGender.SetFocus;
+    result:= false;
+  end;
 end;
 
 procedure TframMedCardEdit.Init;

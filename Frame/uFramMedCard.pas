@@ -22,9 +22,9 @@ type
     fdtMedCardplace_work: TStringField;
     fdtMedCarddate_birth: TStringField;
     fdtMedCardgender: TStringField;
-    fdtMedCardtelephone: TStringField;
     edtFioFind: TEdit;
     btnFind: TButton;
+    fdtMedCardtelephone: TStringField;
     procedure DBGridDrawColumnCell(Sender: TObject; const Rect: TRect;
       DataCol: Integer; Column: TColumn; State: TGridDrawState);
     procedure DBGridDblClick(Sender: TObject);

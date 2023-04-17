@@ -81,7 +81,7 @@ inherited framMedCard: TframMedCard
     object fdtMedCardtelephone: TStringField
       DisplayLabel = #1058#1077#1083#1077#1092#1086#1085
       FieldName = 'telephone'
-      Size = 12
+      Size = 14
     end
   end
 end
